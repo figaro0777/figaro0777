@@ -1,38 +1,419 @@
-.App {
-  text-align: center;
+/*.App {*/
+/*  position: relative;*/
+/*  margin: 0;*/
+/*  !*display: block;*!*/
+/*  !*flex-direction: column;*!*/
+/*  !*align-items: center;*!*/
+/*  !*align-content: flex-start;*!*/
+/*  !*flex-wrap: wrap;*!*/
+
+/*}*/
+
+@media  (min-width: 1200px ) {
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media  (min-width: 781px )  and (max-width: 1199px ) {
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media  (min-width: 577px )  and (max-width: 780px ) {
+  .App {
+    position: relative;
+    margin: 0 0;
+    width: 780px;
   }
-}
+  .Header {
+    position: relative;
+    width: 100%;
+    /*margin: 0;*/
+    height: 144px;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
+    background-color: rgba(240, 242, 246, 1);
+    /*background-position: 50% 50%;*/
+    z-index: 1;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  .HeaderButtonBox {
+    width: 730px;
+    height: 80px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    /*background-color: white;*/
+    left: 23px;
+    top: 62px;
+    z-index: 2;
   }
+  .HeaderButton {
+    font-style: normal;
+    font-weight: bold;
+    margin: auto 15px;
+    z-index: 3;
+
+  }
+  .HeaderLogo {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    left: 70px;
+    top: 30px;
+    /*background-color: white;*/
+    display: flex;
+    align-items: center;
+    z-index: 3;
+  }
+  .HeaderNumber {
+    width: 130px;
+    height: auto;
+    position: absolute;
+    left: 430px;
+    top: 35px;
+    z-index: 4;
+  }
+  .HeaderContactUs {
+    width: 80px;
+    height: 32px;
+    position: absolute;
+    right: 90px;
+    top: 25px;
+    display: flex;
+    align-items: center;
+    /*background-color: beige;*/
+    z-index: 3;
+  }
+
+  .HeaderContactUsText {
+    width: 80px;
+    height: 32px;
+    position: absolute;
+    right: 75px;
+    top: 25px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    /*background-color: gray;*/
+    z-index: 4;
+  }
+
+  .Homepage {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 10px 0 160px;
+    padding: 10px;
+    height: 600px;
+    background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 100%);
+    z-index: 1;
+
+  }
+  .HomepageTextBig{
+    width: 80%;
+    position: absolute;
+    left: 70px;
+    top: 10px;
+    /*background-color: beige;*/
+    z-index: 2;
+  }
+  .HomepageTextSmall {
+    width: 300px;
+    position: absolute;
+    left: 120px;
+    top: 70px;
+    /*background-color: beige;*/
+    z-index: 2;
+  }
+  .HomepageButtonBlue {
+    width: 100px;
+    position: absolute;
+    left: 85px;
+    top: 90px;
+    /*background-color: beige;*/
+    z-index: 2;
+  }
+  .HomepageButtonWhite {
+    width: 140px;
+    position: absolute;
+    right: 80px;
+    top: 90px;
+    /*background-color: beige;*/
+    z-index: 2;
+  }
+  .HomepagePhoto1 {
+    width: 650px;
+    position: absolute;
+    bottom: -35px;
+    left: 33px;
+    z-index: 3;
+    display: block;
+    /*background-color: beige;*/
+  }
+
+  .HomepageLogos {
+    max-width: 650px;
+    position: absolute;
+    bottom: -60px;
+    left: 30px;
+    z-index: 9;
+    display: block;
+    /*background-color: beige;*/
+  }
+
+
+  .About {
+    position: relative;
+    width: 100%;
+    min-height: 900px;
+    margin: 0 0;
+    /*background-color: rgba(240, 242, 246, 1);*/
+  }
+  .AboutTextBig {
+    width: 600px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+  }
+  .AboutPhoto {
+    width: 350px;
+    position: relative;
+    float: left;
+    left: 20px;
+    top: 80px;
+  }
+
+  .AboutText {
+    width: 350px;
+    position: relative;
+    float: right;
+    right: 20px;
+    top: 80px;
+
+  }
+  .FooterLeft {
+    position: absolute;
+    float: left;
+    width: 300px;
+    left: 50px;
+    bottom: 25px;
+
+    /*background-color: beige;*/
+  }
+  .FooterRight {
+    position: absolute;
+    float: right;
+    width: 300px;
+    right: 50px;
+    bottom: 30px;
+
+    /*background-color: beige;*/
+  }
+
 }
+
+
+@media (max-width: 576px ) {
+  .App {
+    position: relative;
+    margin: 0 0;
+    width: 576px;
+  }
+  .Header {
+    position: relative;
+    width: 576px;
+    /*margin: 0;*/
+    height: 164px;
+    display: flex;
+    /*align-items: center;*/
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
+    /*background-color: rgba(240, 242, 246, 1);*/
+    background-position: 50% 50%;
+    z-index: 1;
+
+  }
+  .HeaderButtonBox {
+    width: 530px;
+    height: 80px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    /*background-color: white;*/
+    left: 23px;
+    top: 62px;
+    z-index: 2;
+  }
+  .HeaderButton {
+    font-style: normal;
+    font-weight: normal;
+    margin: auto 5px;
+    z-index: 3;
+
+  }
+  .HeaderLogo {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    left: 70px;
+    top: 30px;
+    /*background-color: white;*/
+    display: flex;
+    align-items: center;
+    z-index: 3;
+  }
+  .HeaderNumber {
+    width: 130px;
+    height: auto;
+    position: absolute;
+    left: 210px;
+    top: 35px;
+    z-index: 4;
+  }
+  .HeaderContactUs {
+    width: 80px;
+    height: 32px;
+    position: absolute;
+    right: 90px;
+    top: 25px;
+    display: flex;
+    align-items: center;
+    /*background-color: beige;*/
+    z-index: 3;
+  }
+
+  .HeaderContactUsText {
+    width: 80px;
+    height: 32px;
+    position: absolute;
+    right: 75px;
+    top: 25px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    /*background-color: gray;*/
+    z-index: 4;
+  }
+  .Homepage {
+    position: relative;
+    display: block;
+    width: 575px;
+    margin: 10px 0 120px;
+    padding: 10px;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 100%);
+    z-index: 1;
+
+  }
+  .HomepageTextBig{
+    width: 80%;
+    position: absolute;
+    left: 53px;
+    top: 10px;
+    /*background-color: beige;*/
+    z-index: 2;
+  }
+  .HomepageTextSmall {
+    width: 300px;
+    position: absolute;
+    left: 70px;
+    top: 60px;
+    /*background-color: beige;*/
+    z-index: 2;
+  }
+  .HomepageButtonBlue {
+    width: 100px;
+    position: absolute;
+    left: 70px;
+    top: 90px;
+    /*background-color: beige;*/
+    z-index: 2;
+  }
+  .HomepageButtonWhite {
+    width: 140px;
+    position: absolute;
+    right: 65px;
+    top: 90px;
+    /*background-color: beige;*/
+    z-index: 2;
+  }
+  .HomepagePhoto1 {
+    max-width: 500px;
+    position: absolute;
+    bottom: -25px;
+    left: 21px;
+    z-index: 3;
+    display: block;
+    /*background-color: beige;*/
+  }
+
+  .HomepageLogos {
+      max-width: 560px;
+      position: absolute;
+      bottom: -50px;
+      left: 5px;
+      z-index: 9;
+      display: block;
+      /*background-color: beige;*/
+  }
+
+
+  .About {
+    position: relative;
+    width: 575px;
+    height: max-content;
+    margin: 0 0;
+    display: block;
+    /*background-color: rgba(240, 242, 246, 1);*/
+  }
+  .AboutTextBig {
+    width: 400px;
+    position: relative;
+    left: 90px;
+    /*background-color: beige;*/
+    z-index: 2;
+  }
+  .AboutPhoto {
+    width: 500px;
+    position: relative;
+    left: 45px;
+    top: -80px;
+    /*background-color: beige;*/
+  }
+
+  .AboutText {
+    width: 400px;
+    position: relative;
+    left: 85px;
+    top: 10px;
+
+  }
+  .FooterLeft {
+    position: relative;
+    float: left;
+    width: 200px;
+    left: 50px;
+    margin: 42px 0 25px;
+    /*background-color: beige;*/
+  }
+  .FooterRight {
+    position: relative;
+    float: right;
+    width: 200px;
+    right: 50px;
+    margin: 45px 0 25px;
+    /*background-color: beige;*/
+  }
+
+}
+
+
+
+
