@@ -5,7 +5,7 @@ import FormControl from 'react-bootstrap/InputGroup';
 const Feedback = () => {
     return (
         <div>
-            <InputGroup size="sm">
+            <InputGroup>
                 <InputGroup.Prepend>
                     <InputGroup.Text>With textarea</InputGroup.Text>
                 </InputGroup.Prepend>
