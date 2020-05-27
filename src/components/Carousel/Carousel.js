@@ -5,68 +5,28 @@ import p02 from '../../images/slide02.jpg';
 import p03 from '../../images/slide03.jpg';
 import p04 from '../../images/slide04.jpg';
 import p05 from '../../images/slide05.jpg';
+import "./Carousel.css";
 
 const Car = () => {
+    const imgList = [p01, p02 ,p03, p04, p05];
     return (
-        <Carousel interval={3000} >
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={p01}
-                    alt="slide 01"
-                />
-                <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={p02}
-                    alt="slide 02"
-                />
-                <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={p03}
-                    alt="slide 03"
-                />
-                <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={p04}
-                    alt="slide 04"
-                />
-
-                <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={p05}
-                    alt="slide 05"
-                />
-
-                <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
+        <div className="Slider">
+            <Carousel interval={3000} >
+                {imgList.map((img) => (
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={img}
+                            alt="slide..."
+                        />
+                        <Carousel.Caption>
+                            <h3>Slide label</h3>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                ))}
+            </ Carousel>
+        </div>
     );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../App.css";
+import "./About.css";
 import AboutTextBig from "../../images/AboutTextBig.png";
 import AboutPhoto from "../../images/AboutPhoto.png";
 import AboutText from "../../images/AboutText.png";

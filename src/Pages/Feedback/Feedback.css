@@ -1,0 +1,28 @@
+.Feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: max-content;
+    text-align: center;
+    margin: 1% auto 5%;
+}
+.FeedbackMessage {
+    width: 80%;
+    height: 50px;
+    display: block;
+    margin: 15px auto 15px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+.ModalAuthor {
+    margin: 5px 5px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+.ModalText {
+    margin: 5px 5px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}

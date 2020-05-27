@@ -1,0 +1,15 @@
+.ModalWindow {
+    position: absolute;
+    width: 100%;
+}
+.ModalButton {
+    width: 90px;
+    background-color: #002fff;
+    border-radius: 15px;
+    border-collapse: unset;
+    color: white;
+    border: none;
+}
+.ModalButton:Hover {
+    background-color: #001a60;
+}
