@@ -100,12 +100,13 @@
         float: left;
         left: 60px;
         top: 30px;
+        display: block;
         /*background-color: white;*/
         z-index: 3;
     }
     .HeaderNumber {
         width: 130px;
-        height: auto;
+        /*height: auto;*/
         position: relative;
         float: right;
         right: 270px;

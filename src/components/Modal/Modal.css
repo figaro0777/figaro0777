@@ -1,15 +1,36 @@
-.ModalWindow {
-    position: absolute;
-    width: 100%;
+.ModalBody {
+    width: 50%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 98;
 }
 .ModalButton {
     width: 90px;
     background-color: #002fff;
     border-radius: 15px;
-    border-collapse: unset;
     color: white;
     border: none;
 }
 .ModalButton:Hover {
+    background-color: #001a60;
+}
+.ModalInput {
+    width: 100%;
+    margin: 5px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+.ModalInputButton {
+    margin: 5px;
+    width: 100px;
+    background-color: #002fff;
+    border-radius: 15px;
+    color: white;
+    border: none;
+}
+.ModalInputButton:Hover {
     background-color: #001a60;
 }

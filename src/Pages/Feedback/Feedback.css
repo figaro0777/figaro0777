@@ -10,19 +10,26 @@
 }
 .FeedbackMessage {
     width: 80%;
-    height: 50px;
+    min-height: 50px;
     display: block;
     margin: 15px auto 15px;
     border: 1px solid blue;
     border-radius: 10px;
 }
-.ModalAuthor {
-    margin: 5px 5px;
-    border: 1px solid blue;
+.FeedbackAuthor {
+    margin: 5px;
+    border: 2px solid blue;
     border-radius: 10px;
 }
-.ModalText {
-    margin: 5px 5px;
-    border: 1px solid blue;
+.FeedbackText {
+    margin: 5px;
+    border: 2px solid blue;
     border-radius: 10px;
+}
+.FeedbackButton {
+    width: max-content;
+    background-color: #002fff;
+    border-radius: 15px;
+    color: white;
+    border: none;
 }

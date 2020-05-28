@@ -1,58 +1,14 @@
 {
   "feedbacks": [
     {
-      "id": 1,
-      "author": "typicode",
-      "title": "json-server"
+      "title": "hello my ugly little superman",
+      "author": "Dilan",
+      "id": 1
     },
     {
-      "title": {
-        "title": "666666"
-      },
-      "author": {
-        "author": "555"
-      },
+      "title": "my sister do it slowly",
+      "author": "John",
       "id": 2
-    },
-    {
-      "title": {
-        "title": "ploknbjvnchswujekretrkjngfd"
-      },
-      "author": {
-        "author": "figy"
-      },
-      "id": 3
-    },
-    {
-      "title": {
-        "title": {
-          "title": "sasasasasasasaas"
-        }
-      },
-      "author": {
-        "author": {
-          "author": "qqqqqqq"
-        }
-      },
-      "id": 4
-    },
-    {
-      "title": {
-        "title": "vbvvbvbvbvbvbv"
-      },
-      "author": {
-        "author": "787878787"
-      },
-      "id": 5
-    },
-    {
-      "text": {
-        "text": "cvcvccvcvcvcvcvcvcv"
-      },
-      "name": {
-        "name": "bob"
-      },
-      "id": 6
     }
   ]
 }
