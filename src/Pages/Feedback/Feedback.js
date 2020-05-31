@@ -4,8 +4,6 @@ import FeedbackMessage from '../../components/FeedbackMessage/FeedbackMessage';
 import "./Feedback.css"
 const url = 'http://localhost:3001/feedbacks';
 
-// example of component - put to diff folder in future.
-
 
 const Feedback = () => {
     const [text, setText] = useState('');
@@ -33,6 +31,8 @@ const Feedback = () => {
     }, [])
     
     const postMessage = React.useCallback(() => {
+        setText('');
+        setName('');
       fetch(url, {
         method: "POST",
         headers: {"Content-Type": "application/json"},
@@ -73,7 +73,7 @@ const Feedback = () => {
             >
               PostMessage
             </button>
-            <div className="FeedbackMessage" id={"M01"}>
+            <div className="FeedbackMessages" id={"M01"}>
               {messages.map((message) => (
                 <FeedbackMessage
                   key={message?.id}

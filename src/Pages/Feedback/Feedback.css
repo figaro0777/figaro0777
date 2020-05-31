@@ -8,13 +8,14 @@
     text-align: center;
     margin: 1% auto 5%;
 }
-.FeedbackMessage {
+.FeedbackMessages {
     width: 80%;
     min-height: 50px;
     display: block;
     margin: 15px auto 15px;
-    border: 1px solid blue;
+    border: 2px solid blue;
     border-radius: 10px;
+    overflow-wrap: break-word;
 }
 .FeedbackAuthor {
     margin: 5px;
@@ -32,4 +33,10 @@
     border-radius: 15px;
     color: white;
     border: none;
+}
+.FeedbackMessage {
+    border-radius: 10px;
+    margin: 5px;
+    border: 1px solid blue;
+    padding-bottom: 5px;
 }
